@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* importo fuente */
+@import "./variables.css"; /* importo hoja con variables generales */
+
+
+
+/* BODY */
+
+.body {
+    font-family: var(--roboto);
+    font-weight: bold;
+    width: 320px;
+    color: var(--colorGrisOscuro)
+       }
+
+/* HEADER */
+
+.header{
+    background-color: var(--colorAmarillo);
+    }
+
+.header_logo{
+    margin: 30px;
+}
+
+.header_titulo{
+    font-size: var(--tamanioTitulares);
+    text-align: center;
+}
+
+
+.icono_menu_hamburguesa {
+    text-align: center;
+    width: 25px;
+    margin: auto; 
+    background-color: var(--colorCeleste); 
+}
+
+/*MAIN*/
+
+.main{
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--colorGrisClaro);
+    padding: 5px;
+    }
+
+
+.header_titulo{
+    font-size: var(--tamanioCuerposDeTexto);
+}
+
+.section i{
+    color: var(--colorVerde);
+    margin: 0 50px;
+       }
+
+.caja_articulos_con_imagen{
+    background-color: var(--colorGrisClaro);
+    padding: 15px;
+}
+
+.caja_contenedora_articulos{
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+}
+
+
+.nav {
+    display: none;
+    font-size: var(--tamanioCuerposDeTexto);
+    text-decoration: none;
+    color: var(--colorGrisOscuro);
+}
+
+
+.descripcion_articulo {
+    display: none;
+    font-size: var(--tamanioDescripciones);
+ }
+
+
+/* FOOTER */
+
+.footer{ 
+    text-align: center;
+    padding: 50px 15px 15px 15px;
+    background-color: white;
+}
+
+.footer i {
+    margin-bottom: 10px;
+    color: var(--colorCeleste);
+    font-size: 2em;
+}
+
+.p {
+    font-size: var(--tamanioDescripciones);
+}
+
+.footer section {
+    margin: 20px 20px;
+}
+
+.copyright {
+    text-align: left;
+  }
+
+  /* NAVEGACIÓN TABLET*/
+
+  @media (min-width: 361px) {
+  
+    .descripcion_articulo {
+        display: block;
+        margin-top: 15px;
+      }
+  .div {
+     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+  .nav {
+        display: block;
+    }
+
+.icono_menu_hamburguesa {
+        display: none;
+    }
+}
+
+  /* NAVEGACION DESKTOP */
+
+  @media (min-width: 769px) {
+
+    .descripcion_articulo {
+        display: block;
+        margin-top: 15px;
+      }
+  .div {
+     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+  .nav {
+    display: block;
+}
+
+.icono_menu_hamburguesa {
+    display: none;
+}
+
+}
