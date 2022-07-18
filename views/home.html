@@ -11,15 +11,14 @@
 <body class="body">
     
 <header class="header">
-      
+    <div class="caja_logo_barra_busqueda">
     <img class= "header_logo" src="\images\logo-mercado-liebre.svg" width="200" alt="Logo MercadoLiebre">
    
-   <form action=””>
-    <input= type=”txt”> <button>Buscar productos, marcas...</button>  
+   <form class="barra_busqueda" action=””>
+   <input= type=”txt”> <button>Buscar productos, marcas...</button>  
    </form> 
-
-<main class="main">
-    <h3 class="header_titulo">
+   </div> 
+   <h3 class="header_titulo">
         <i class="fa-solid fa-hand-holding-dollar"></i>
         Comprá en cuotas y sin tarjeta de crédito</h3>
  
@@ -41,20 +40,25 @@
 <div class="icono_menu_hamburguesa">
     <i class="fa-solid fa-bars" style="color:white"></i>
 </div>
-
 </header>
 
-<h4>Basado en tu última visita</h4>
+<div>
+    <img src="./images/img-home-banner.jpg" alt="">
+</div>
 
-<section class="section">
- <div class="caja_articulos_con_imagen">
-    <img src="\images\img-cafetera-moulinex.jpg" width="250" alt="imagen Cafetera">
+<main class="main">
+<h2>Basado en tu última visita</h2>
+ <section class="main_section">
+  <div class="caja_articulos_con_imagen">
     <article>
-    <div class="caja_contenedora_articulos">
+    <img src="\images\img-cafetera-moulinex.jpg" width="250" alt="imagen Cafetera">
+        <div class="caja_contenedora_articulos">
         <i class="fa-solid fa-truck-fast"></i>
         <ul type="none">
-            <li>$6770</li>
-            <li>40% OFF</li>
+            <div class="caja_precio_descuento">
+            <li class="precio">$6770</li>
+            <li class="descuento">40% OFF</li>
+            </div>
             <li class="descripcion_articulo">Cafetera Moulinex</li>
     </ul>
     </div>
@@ -62,13 +66,15 @@
  </div>
 
  <div class="caja_articulos_con_imagen">
-  <img src="\images\img-macbook-pro-2019.jpg" width="250" alt="imagen MacBook">
     <article>
-    <div class="caja_contenedora_articulos">
+        <img src="\images\img-macbook-pro-2019.jpg" width="250" alt="imagen MacBook">
+        <div class="caja_contenedora_articulos">
         <i class="fa-solid fa-truck-fast"></i>
         <ul type="none">
-            <li>$230.000</li>
-            <li>30% OFF</li>
+            <div class="caja_precio_descuento">
+            <li class="precio">$230.000</li>
+            <li class="descuento">30% OFF</li>
+            </div>
             <li class="descripcion_articulo">McBook Pro</li>
         </ul>
     </div>
@@ -76,13 +82,15 @@
  </div>
 
  <div class="caja_articulos_con_imagen">
-  <img src="\images\img-samsung-galaxy-s10.jpg" width="250" alt="imagen img-samsung-galaxy-s10">
     <article>
-    <div class="caja_contenedora_articulos">
+    <img src="\images\img-samsung-galaxy-s10.jpg" width="250" alt="imagen img-samsung-galaxy-s10">
+        <div class="caja_contenedora_articulos">
         <i class="fa-solid fa-truck-fast"></i>
         <ul type="none">
-            <li>$70.500</li>
-            <li>10% OFF</li>
+            <div class="caja_precio_descuento">
+            <li class="precio">$70.500</li>
+            <li class="descuento">10% OFF</li>
+            </div>
             <li class="descripcion_articulo">Samsung Galaxy S10</li>
         </ul>
     </div>
@@ -90,13 +98,15 @@
  </div>
 
  <div class="caja_articulos_con_imagen">
-  <img src="\images\img-tv-samsung-smart.jpg" width="250" alt="imagen tv-samsung-smart">
     <article>
+        <img src="\images\img-tv-samsung-smart.jpg" width="250" alt="imagen tv-samsung-smart">
         <div class="caja_contenedora_articulos">
         <i class="fa-solid fa-truck-fast"></i>
         <ul type="none">
-            <li>$23.200</li>
-            <li>5% OFF</li>
+            <div class="caja_precio_descuento">
+            <li class="precio">$23.200</li>
+            <li class="descuento">5% OFF</li>
+            </div>
             <li class="descripcion_articulo">Samsung Galaxy S10</li>
         </ul>
     </div>
@@ -105,15 +115,17 @@
 </section>
 
 <h2>Ofertas</h2>
-<section class="section">
+<section class="main_section">
  <div class="caja_articulos_con_imagen">
+    <article>
     <img src="\images\img-cafetera-moulinex.jpg" width="250" alt="imagen Cafetera">
-            <article>
         <div class="caja_contenedora_articulos">
             <i class="fa-solid fa-truck-fast"></i>
             <ul type="none">
-                <li>$6770</li>
-                <li>40% OFF</li>
+                <div class="caja_precio_descuento">
+                <li class="precio">$6770</li>
+                <li class="descuento">40% OFF</li>
+                </div>
                 <li class="descripcion_articulo">Cafetera Moulinex</li>
             </ul>
         </div>
@@ -121,13 +133,15 @@
  </div>
     
  <div class="caja_articulos_con_imagen">
-  <img src="\images\img-macbook-pro-2019.jpg" width="250" alt="imagen MacBook">
-        <article>
-        <div class="caja_contenedora_articulos">
+    <article>
+        <img src="\images\img-macbook-pro-2019.jpg" width="250" alt="imagen MacBook">
+            <div class="caja_contenedora_articulos">
             <i class="fa-solid fa-truck-fast"></i>
             <ul type="none">
-                <li>$230.000</li>
-                <li>30% OFF</li>
+                <div class="caja_precio_descuento">
+                <li class="precio">$230.000</li>
+                <li class="descuento">30% OFF</li>
+                </div>
                 <li class="descripcion_articulo"> McBook Pro</li>
                 </div>
             </ul>
@@ -136,13 +150,15 @@
   </div>
 
   <div class="caja_articulos_con_imagen">
-    <img src="\images\img-samsung-galaxy-s10.jpg" width="250" alt="imagen img-samsung-galaxy-s10">
         <article>
-        <div class="caja_contenedora_articulos">
+        <img src="\images\img-samsung-galaxy-s10.jpg" width="250" alt="imagen img-samsung-galaxy-s10">
+           <div class="caja_contenedora_articulos">
             <i class="fa-solid fa-truck-fast"></i>
             <ul type="none">
-                <li>$70.500</li>
-                <li>10% OFF</li>
+                <div class="caja_precio_descuento">
+                <li class="precio">$70.500</li>
+                <li class="descuento">10% OFF</li>
+                </div>
                 <li class="descripcion_articulo">Samsung Galaxy S10</li>
             </ul>
         </div>
@@ -150,13 +166,15 @@
   </div>
 
   <div class="caja_articulos_con_imagen">
-    <img src="\images\img-tv-samsung-smart.jpg" width="250" alt="imagen tv-samsung-smart">
-        <article>
-        <div class="caja_contenedora_articulos">
+    <article>
+        <img src="\images\img-tv-samsung-smart.jpg" width="250" alt="imagen tv-samsung-smart">
+            <div class="caja_contenedora_articulos">
             <i class="fa-solid fa-truck-fast"></i>
             <ul type="none">
-                <li>$23.200</li>
-                <li>5% OFF</li>
+                <div class="caja_precio_descuento">
+                <li class="precio">$23.200</li>
+                <li class="descuento">5% OFF</li>
+                </div>
                 <li class="descripcion_articulo">Samsung Galaxy S10</li>
             </ul>
         </div>

@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalialionti/tp5_mercado_liebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/natalialionti/tp5_mercado_liebre/issues"
+  },
+  "homepage": "https://github.com/natalialionti/tp5_mercado_liebre#readme",
+  "devDependencies": {}
 }
