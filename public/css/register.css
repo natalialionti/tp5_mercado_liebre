@@ -1,8 +1,9 @@
 .register {
     padding: 50px 0;
+    background-color: rgb(228, 233, 238);
   }
   
-  .register form {
+.register form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -16,6 +17,12 @@
     margin: 3px 0;
 }
 
+.dia_nacimiento{
+  border: none;
+  padding: 10px;
+  margin: 3px 0;
+}
+
 .foto_perfil {
   width: 150px;
   height: 150px;
@@ -23,7 +30,7 @@
   margin: 0 auto 15px auto;
   background-color: gainsboro;
   border-radius: 15px;
-  background-image: /*poner una imagen de carpeta images tipo perfil */;
+  background-image: url("/images/fotos-perfil-cat.jpg");
   background-size: contain;
 }
 
@@ -39,10 +46,14 @@
   z-index: 0;
   display: block;
   width: 100%;
-  background: greenyellow;
+  background: #1fa6d3;
   color: #fff;
   padding: 10px 0;
   font-size: var(--tamanioDescuentos);
+  }
+
+.subir_foto{
+    display: none;
   }
 
 .actividad_a_realizar {
