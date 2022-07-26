@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* importo fuente */
-@import "./variables.css"; /* importo hoja con variables generales */
 @import "./normalize.css";
+
+
+:root{ --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --tamanioCuerposDeTexto: 12px;
+    --tamanioTitulares: 24px;
+    --tamanioPrecios: 18px;
+    --tamanioDescuentos: 16px;
+    --tamanioDescripciones: 16px;
+    
+    /*TIPOGRAFIA*/
+    --roboto: "Roboto", sans-serif;
+}
+
+/* HOME */
 
 * {
     box-sizing: border-box;
@@ -95,10 +113,13 @@
 
 .main{
     margin: 0;
-    width: 90%;
+    width: 100%;
     background-color: var(--colorGrisClaro);
-    padding:5px;
     }
+
+.banner{
+    width: 100%;
+}
 
 .main h2 {
     font-size: var(--tamanioPrecios);
@@ -109,18 +130,20 @@
 .main_section {
     display: flex;
     flex-wrap: wrap;   
-    justify-content: center; 
+    justify-content: center;
+    margin: 0 auto; 
     }
 
 .main_section i{
     color: var(--colorVerde);
     margin: 0 20px;
-       }
+    }
 
 .caja_articulos_con_imagen{
     background-color: var(--colorGrisClaro);
     padding: 15px;
     column-gap: 20px;
+    align-self: flex-start; /* para que se despliegue una sola tarjeta al pasar el mouse (hover) */
 }
 
 .caja_contenedora_articulos {
@@ -170,6 +193,15 @@
     font-size: var(--tamanioDescripciones);
  }
 
+ .caja_articulos_con_imagen:hover .descripcion_articulo{ 
+    display:block; 
+    /* al pasar el mouse por arriba de TODA la caja, se muestra (displa block) el "descrpcion_articulo que inicialmente estaba oculto (display none)"*/
+} 
+
+.caja_articulos_con_imagen:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 
 /* FOOTER */
 
@@ -177,12 +209,20 @@
     text-align: center;
     padding: 50px 15px 15px 15px;
     background-color: white;
-}
+        }
 
 .footer i {
     margin-bottom: 10px;
     color: var(--colorCeleste);
     font-size: 2em;
+}
+
+
+.articulo_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .p {
@@ -225,7 +265,7 @@
     }
     
     .descripcion_articulo {
-        display: block;
+        display: none;
         margin-top: 15px;
       }
 
@@ -241,7 +281,6 @@
     }
 
     .main article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         background-color: white;
             }
 
@@ -297,7 +336,7 @@
     }
     
 .descripcion_articulo {
-        display: block;
+        display: none;
         margin-top: 15px;
       }
 
@@ -313,8 +352,7 @@
     }
 
 .main article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        background-color: white;
+    background-color: white;
             }
 
 .main main {
@@ -323,5 +361,10 @@
 
 .icono_menu_hamburguesa {
         display: none;
+    }
+
+.cajas_articulos_footer{
+        display: flex;
+        flex-direction: row;
     }
   }
